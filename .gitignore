@@ -1,0 +1,23 @@
+# Local tools and generated reports
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.venv/
+.validation/
+.coverage
+htmlcov/
+
+# Private environments and runtime
+.env
+.env.*
+!.env.example
+runtime/
+node_modules/
+.playwright-cli/
+playwright-report/
+test-results/
+*.sql
+*.sqlite
+*.sqlite3
+*.dump

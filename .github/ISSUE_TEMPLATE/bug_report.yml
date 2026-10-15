@@ -1,0 +1,31 @@
+name: Ошибка поведения или установки
+description: Воспроизводимый случай с ожидаемым и фактическим результатом.
+title: 'Bug: '
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Среда и версия
+      description: Скил, версия пакета, агент, тип сайта и доступные инструменты. Исключите секреты.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Запрос и воспроизведение
+      description: Синтетический пример или разрешённые обезличенные материалы, шаги и границы записи.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат и доказательства
+      description: Что действительно выполнено и просмотрено, что осталось неизвестным.
+    validations:
+      required: true

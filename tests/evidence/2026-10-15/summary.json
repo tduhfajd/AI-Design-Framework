@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-15",
+  "scenario_count": 4,
+  "executor_runs": 6,
+  "skill_changes_during_test": false,
+  "outcomes": [
+    {
+      "run": "J-02",
+      "status": "passed",
+      "meaning": "complete-prototype-showcase"
+    },
+    {
+      "run": "J-03",
+      "status": "protocol_failed_partial",
+      "meaning": "shared-default-registry"
+    },
+    {
+      "run": "J-06",
+      "status": "protocol_failed_partial",
+      "meaning": "shared-default-registry"
+    },
+    {
+      "run": "J-03R",
+      "status": "passed_with_editing_limit",
+      "meaning": "fresh-CMS-transfer"
+    },
+    {
+      "run": "J-06R",
+      "status": "passed",
+      "meaning": "fresh-CMS-handoff"
+    },
+    {
+      "run": "J-07",
+      "status": "targeted_fix_verified_review_missed_P2",
+      "meaning": "caption-retained-shadow-open"
+    }
+  ],
+  "open_findings": [
+    "CAPTION-SHADOW P2",
+    "J-03R home requires HTML editing",
+    "browser outbound resource allowlist absent"
+  ],
+  "scope_limit": "Synthetic SVG, one WP/Woo version, desktop Chromium viewports. No physical phone, payment, order submission, deployment, owner acceptance, or robust success-rate estimate.",
+  "publication_scope": "Curated summary and synthetic screenshots. Raw agent transcripts, CMS runtime, data exports, and private development paths are not included. Package tests do not replay these behavioral runs."
+}

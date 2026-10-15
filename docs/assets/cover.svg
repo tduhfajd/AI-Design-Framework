@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="480" viewBox="0 0 1440 480" role="img" aria-labelledby="title description">
+  <title id="title">AI Design Framework</title>
+  <desc id="description">От задачи продукта к осознанному дизайну. Discovery, direction, implementation и review.</desc>
+  <rect width="1440" height="480" rx="24" fill="#f6f3eb"/>
+  <path d="M58 66H1382" stroke="#bdc5bc"/>
+  <text x="60" y="48" fill="#58675c" font-family="Arial, sans-serif" font-size="17" letter-spacing="2">DESIGN WITH INTENT</text>
+  <text x="60" y="163" fill="#233c34" font-family="Georgia, serif" font-size="75">AI Design</text>
+  <text x="60" y="244" fill="#233c34" font-family="Georgia, serif" font-size="75">Framework</text>
+  <text x="63" y="300" fill="#58675c" font-family="Arial, sans-serif" font-size="24">От задачи продукта</text>
+  <text x="63" y="335" fill="#58675c" font-family="Arial, sans-serif" font-size="24">к осознанному дизайну.</text>
+  <path d="M780 106L918 106L964 152L964 280L780 280Z" fill="#e4e8df" stroke="#718574" stroke-width="2"/>
+  <path d="M918 106V152H964" fill="none" stroke="#718574" stroke-width="2"/>
+  <path d="M810 189H928M810 211H915M810 233H880" stroke="#9eac9d" stroke-width="4"/>
+  <rect x="998" y="166" width="255" height="154" rx="14" fill="#233c34"/>
+  <rect x="1020" y="188" width="104" height="110" rx="8" fill="#b45b3c"/>
+  <path d="M1144 202H1224M1144 227H1214M1144 252H1198" stroke="#c6d0c1" stroke-width="4"/>
+  <circle cx="1254" cy="144" r="32" fill="#f6f3eb" stroke="#b45b3c" stroke-width="2"/>
+  <path d="M1240 144L1250 154L1269 134" fill="none" stroke="#b45b3c" stroke-width="3"/>
+  <path d="M60 381H1380" stroke="#bdc5bc"/>
+  <text x="61" y="430" fill="#233c34" font-family="Arial, sans-serif" font-size="20">DISCOVERY</text>
+  <text x="337" y="430" fill="#718574" font-family="Arial, sans-serif" font-size="23">→</text>
+  <text x="415" y="430" fill="#233c34" font-family="Arial, sans-serif" font-size="20">DIRECTION</text>
+  <text x="670" y="430" fill="#718574" font-family="Arial, sans-serif" font-size="23">→</text>
+  <text x="750" y="430" fill="#233c34" font-family="Arial, sans-serif" font-size="20">IMPLEMENTATION</text>
+  <text x="1100" y="430" fill="#718574" font-family="Arial, sans-serif" font-size="23">→</text>
+  <text x="1190" y="430" fill="#233c34" font-family="Arial, sans-serif" font-size="20">REVIEW</text>
+</svg>

@@ -1,0 +1,23 @@
+name: Предложение
+description: Улучшение процесса, скила или проверки.
+title: 'Idea: '
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Задача пользователя
+      description: Какой реальный сценарий сейчас не получается?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Предлагаемое поведение
+      description: Что должно измениться и какие существующие решения нужно сохранить?
+    validations:
+      required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Как проверить
+      description: Конкретный пример и наблюдаемый критерий завершения.
