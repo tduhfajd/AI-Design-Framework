@@ -45,14 +45,7 @@
 
 ## Как устроен процесс
 
-```mermaid
-flowchart LR
-    A[Discovery<br/>Задача и содержание] --> B[Direction<br/>Визуальные пробы]
-    B --> C[Выбор владельца<br/>или делегирование]
-    C --> D[Implementation<br/>Реализация]
-    D --> E[Review<br/>Экраны и сценарии]
-    E -->|Исправления| D
-```
+![Процесс: Discovery → Direction → выбор владельца или делегирование → Implementation → Review; замечания возвращаются в Implementation.](docs/assets/workflow.svg)
 
 Этап выбирается по задаче. Для исправления меню достаточно implementation и review.
 При наличии утверждённого макета можно сразу переходить к переносу.
