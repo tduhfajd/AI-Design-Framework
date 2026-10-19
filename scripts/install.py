@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS = ('ai-design-discovery', 'ai-design-direction', 'ai-design-implementation',
-          'ai-design-review', 'break-ui', 'mobile-native')
+          'ai-design-review', 'break-ui', 'mobile-native', 'ai-design-elements')
 
 
 def same_tree(source, target):
@@ -19,6 +19,8 @@ def same_tree(source, target):
         for item in root.rglob('*'):
             if item.is_symlink():
                 return None
+            if '__pycache__' in item.relative_to(root).parts or item.suffix in {'.pyc', '.pyo'}:
+                continue
             if item.is_file():
                 result[item.relative_to(root)] = item.read_bytes()
         return result
@@ -57,7 +59,7 @@ def install(project, skills=SKILLS, dry_run=False):
                 results.append((name, 'unchanged'))
                 continue
             staged = Path(staging) / name
-            shutil.copytree(source, staged)
+            shutil.copytree(source, staged, ignore=shutil.ignore_patterns('__pycache__', '*.pyc', '*.pyo'))
             if target.exists() or target.is_symlink():
                 raise ValueError('Destination changed during installation: ' + str(target))
             staged.rename(target)

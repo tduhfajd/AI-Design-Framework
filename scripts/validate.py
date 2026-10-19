@@ -9,7 +9,7 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS = ('ai-design-discovery', 'ai-design-direction', 'ai-design-implementation',
-          'ai-design-review', 'break-ui', 'mobile-native')
+          'ai-design-review', 'break-ui', 'mobile-native', 'ai-design-elements')
 
 
 def validate(root=ROOT):
@@ -17,7 +17,12 @@ def validate(root=ROOT):
     errors = []
     manifest = json.loads((root / 'package-manifest.json').read_text(encoding='utf-8'))
     expected = manifest['skill_files']
-    actual = {p.relative_to(root).as_posix(): p for p in (root / '.agents/skills').rglob('*') if p.is_file()}
+    actual = {p.relative_to(root).as_posix(): p for p in (root / '.agents/skills').rglob('*')
+              if p.is_file() and '__pycache__' not in p.relative_to(root).parts
+              and p.suffix not in {'.pyc', '.pyo'}}
+    version = root / 'VERSION'
+    if not version.is_file() or version.read_text(encoding='utf-8').strip() != manifest['framework_version']:
+        errors.append('VERSION differs from package-manifest.json')
     if set(actual) != set(expected):
         errors.append('Skill file inventory differs from package-manifest.json')
     for name, digest in expected.items():

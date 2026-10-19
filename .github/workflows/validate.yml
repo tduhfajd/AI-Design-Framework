@@ -28,5 +28,7 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Validate packages and documentation
         run: python scripts/validate.py
-      - name: Test installer and validation failures
+      - name: Test installer, elements CLI and validation failures
         run: python -m unittest discover -s tests/unit -v
+      - name: Recheck package after Python execution
+        run: python scripts/validate.py

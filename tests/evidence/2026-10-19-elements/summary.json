@@ -1,0 +1,137 @@
+{
+  "release": "0.4.0",
+  "date": "2026-10-19",
+  "scope": "Public summary of independently executed synthetic tasks; original raw transcripts and machine-specific harness are not distributed",
+  "independent_contexts": 9,
+  "initial_cases": 8,
+  "original_snapshot": "v1",
+  "retest_snapshot": "v2",
+  "cases": [
+    {
+      "id": "BE-01",
+      "snapshot": "v1",
+      "behavioral_result": "passed",
+      "finding": null,
+      "forbidden_changes": [],
+      "skill_unchanged": true
+    },
+    {
+      "id": "BE-02",
+      "snapshot": "v1",
+      "behavioral_result": "passed",
+      "finding": null,
+      "forbidden_changes": [],
+      "skill_unchanged": true
+    },
+    {
+      "id": "BE-03",
+      "snapshot": "v1",
+      "behavioral_result": "passed",
+      "finding": null,
+      "forbidden_changes": [],
+      "skill_unchanged": true
+    },
+    {
+      "id": "BE-04",
+      "snapshot": "v1",
+      "behavioral_result": "passed",
+      "finding": null,
+      "forbidden_changes": [],
+      "skill_unchanged": true
+    },
+    {
+      "id": "BE-05",
+      "snapshot": "v1",
+      "behavioral_result": "passed",
+      "finding": null,
+      "forbidden_changes": [],
+      "skill_unchanged": true
+    },
+    {
+      "id": "BE-06",
+      "snapshot": "v1",
+      "behavioral_result": "passed",
+      "finding": null,
+      "forbidden_changes": [],
+      "skill_unchanged": true
+    },
+    {
+      "id": "BE-07",
+      "snapshot": "v1",
+      "behavioral_result": "passed",
+      "finding": "ELEM-01: recovered search metadata gap",
+      "forbidden_changes": [],
+      "skill_unchanged": true
+    },
+    {
+      "id": "BE-07R",
+      "snapshot": "v2",
+      "behavioral_result": "passed",
+      "finding": null,
+      "forbidden_changes": [],
+      "skill_unchanged": true
+    },
+    {
+      "id": "BE-08",
+      "snapshot": "v1",
+      "behavioral_result": "passed",
+      "finding": null,
+      "forbidden_changes": [],
+      "skill_unchanged": true
+    }
+  ],
+  "defect": [
+    {
+      "id": "ELEM-01",
+      "priority": "P2",
+      "scope": "catalog English search metadata",
+      "state": "fixed-and-rechecked",
+      "original": "BE-07",
+      "repeat": "BE-07R",
+      "regression_before": "failed",
+      "regression_after": "passed"
+    }
+  ],
+  "v1_skill_hashes": {
+    "SKILL.md": "496343938d984bec3a38fdd2009d276d72caf79a80f956bbb287c8687bc9b75b",
+    "SOURCE.md": "f0e2de7bbeaf8a4557c89d86a7ed9a2cde35450b89ea77dfc1fa12eda6b856e7",
+    "agents/openai.yaml": "571926c9d9abd64f269c63ac3228e296eb0deb9f864968da388acf083943c943",
+    "references/catalog.md": "46068724605ea8c7cdf7785be285d64157b7d313c46942891f7da4e5da5c5ca1",
+    "references/records.md": "b741931223cac1d35b9729263c89240fc559444a174424792a02710c49f5f40b",
+    "references/sourcing.md": "4453ef90a54aaa8fff4c22551e13afd9382a34a6175ef63c6d2c151f5b1c66c5",
+    "resources/catalog.json": "d86b34422b8ab0d71efa58f00deca6f91c27638f98257f322389e19b660e3d35",
+    "scripts/elements.py": "e229cc6edc273940b5e620154f4e845250bcfe3771183088cbf74f2d99234dba"
+  },
+  "v2_skill_hashes": {
+    "SKILL.md": "496343938d984bec3a38fdd2009d276d72caf79a80f956bbb287c8687bc9b75b",
+    "SOURCE.md": "e81200929d806316149bb3d4b6fdfadb67425c60746de8b0a2eb446047ff974a",
+    "agents/openai.yaml": "571926c9d9abd64f269c63ac3228e296eb0deb9f864968da388acf083943c943",
+    "references/catalog.md": "61d4c7a79e507fb6812df1b552c53ffa3cadfaf3005fdbaf1909d13f8227dcc2",
+    "references/records.md": "b741931223cac1d35b9729263c89240fc559444a174424792a02710c49f5f40b",
+    "references/sourcing.md": "4453ef90a54aaa8fff4c22551e13afd9382a34a6175ef63c6d2c151f5b1c66c5",
+    "resources/catalog.json": "0690a3f0bed37cfd9f48ca535155c10952317645cdc4d8335afa33c56d307bb0",
+    "scripts/elements.py": "e229cc6edc273940b5e620154f4e845250bcfe3771183088cbf74f2d99234dba"
+  },
+  "automatic_elements_tests": 23,
+  "images": {
+    "faq-mobile.png": {
+      "sha256": "0deddfc44202e35d4d32e0e8186644784b8066bdf78c229a9e49d87f2fb11790",
+      "scope": "Selected synthetic screenshot, not complete coverage"
+    },
+    "review-false-success-hover.png": {
+      "sha256": "55b4832a33fcd70872f983347f6af862b399bc27ef51a98a827d8378c5861e23",
+      "scope": "Selected synthetic screenshot, not complete coverage"
+    },
+    "card-mobile.png": {
+      "sha256": "8205fd437861ff4d444aac35c95e0346169455d4f2ef236d28e761ba7e656db8",
+      "scope": "Selected synthetic screenshot, not complete coverage"
+    }
+  },
+  "limits": [
+    "Same inherited model family; no multi-model robustness claim",
+    "All but BE-07R executed v1, not re-executions on v2",
+    "No physical phone, complete WCAG, field CWV, live external-license audit or production",
+    "No MCP, real CMS or Svelte build executed in these cases",
+    "CLI checks record declarations, not truth of evidence"
+  ]
+}
