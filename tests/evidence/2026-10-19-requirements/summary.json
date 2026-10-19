@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-19",
+  "framework_version": "0.4.1",
+  "tested_candidate": "candidate-v1",
+  "evaluation": "author assessed independent isolated executions; not external review",
+  "protocol": {
+    "fresh_contexts": 6,
+    "scenarios": 4,
+    "baseline_executions": 2,
+    "candidate_executions": 4,
+    "criteria_formalized": "during baseline executions; not preregistered",
+    "external_network_or_production": false
+  },
+  "outcomes": {
+    "DR-01-baseline": "PASS: both seeded issues found",
+    "DR-01R": "PASS: both seeded issues found",
+    "DR-02": "PASS: scoped fix and keyboard verified",
+    "DR-03-baseline": "PASS: separate production output; preview preserved",
+    "DR-03R": "PASS: separate production output; preview preserved",
+    "DR-04": "PASS: all requirements retained; checks planned, not claimed executed"
+  },
+  "root_browser_replay": {
+    "browser": "Chromium 155.0.8059.12",
+    "viewports": [
+      [
+        390,
+        844
+      ],
+      [
+        1440,
+        1000
+      ]
+    ],
+    "mobile_before": {
+      "experience_top": 1072,
+      "focus_after_skip_enter": "BODY"
+    },
+    "mobile_after": {
+      "experience_top": 717.6875,
+      "portrait_bottom": 693.6875,
+      "focus_after_skip_enter": "MAIN"
+    },
+    "next_tab_target_both": "#contact",
+    "rendered_screenshots_opened": true
+  },
+  "preservation": {
+    "review_and_discovery_inputs": "unchanged",
+    "implementation": "only project/index.html changed",
+    "build_preview": "bytes and mtime unchanged in both executions"
+  },
+  "interpretation": "Baseline passed. No causal or statistical reliability improvement demonstrated. Static build flags are not real analytics or deployment.",
+  "screenshots_sha256": {
+    "desktop-after.png": "a397358e916e12f5d516752a4af76651f46ea187c1dc9bee425a740016676eca",
+    "mobile-after.png": "3be638395222cbfefb4fd37242c428ae60fff3d684c0079b8728f29ff40afe5b",
+    "mobile-before.png": "e1af3769e97f4945a88b60761861bd2b974bc347c0c20e7c17bbc1523be63243"
+  }
+}
