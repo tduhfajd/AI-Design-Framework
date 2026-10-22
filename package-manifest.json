@@ -1,17 +1,17 @@
 {
-  "framework_version": "0.4.1",
-  "snapshot_date": "2026-10-19",
+  "framework_version": "0.5.0",
+  "snapshot_date": "2026-10-22",
   "skill_files": {
-    ".agents/skills/ai-design-direction/SKILL.md": "ba80d3f3dc1886e21a753755643e7e333649cac0d7dd3202becaf321e50cfe6a",
+    ".agents/skills/ai-design-direction/SKILL.md": "a6d08ff323a95e172e859aa65a22dca5201777a47cb5db205af7abf0db351b9b",
     ".agents/skills/ai-design-direction/agents/openai.yaml": "91fdbaca5989f931de9026b954be4be381dabb8f0797c0bac7c55ae9c7cf4556",
     ".agents/skills/ai-design-direction/assets/DESIGN.template.md": "32ac7ab9ab3d246cf2204888f3b7ba45194e6db7af97f0b129c898d45debcf26",
     ".agents/skills/ai-design-direction/assets/DIRECTIONS.template.md": "c9c154b23adbdfe0cb78593d5f20238139c1094448702c7c30fee02069d54a11",
-    ".agents/skills/ai-design-direction/references/visual-probes.md": "713416d8bf73c26ccc56708aa761d23b75ea777ecd84c0eaa09cecf4038f3343",
-    ".agents/skills/ai-design-discovery/SKILL.md": "106aeba9ed9cd2261e394e0f4bd03b96431f35c5aa44577412fa009b8889bbb3",
+    ".agents/skills/ai-design-direction/references/visual-probes.md": "7f3145746d94e068a0742f13d08828e3da14362832e7e02af4db5f9bbf5cd4a8",
+    ".agents/skills/ai-design-discovery/SKILL.md": "50a45d87cb92c915581503da3f27237d186db03cbab37d6a4c2a3de42f0fc19c",
     ".agents/skills/ai-design-discovery/agents/openai.yaml": "b7c43c56f5b1080072ed9b263dfd6279dc51af2990a5d0796c7fdb18f31bb0bf",
     ".agents/skills/ai-design-discovery/assets/BRIEF.template.md": "38b21fd4d8e3ba1651cb984414a8db11053928dfdbbee8b3b775d859c374c5c3",
     ".agents/skills/ai-design-discovery/assets/REFERENCES.template.md": "9787549852d8a0a795f395a454b2ce19ed7dc36428bf492b049ed18e0f2e626a",
-    ".agents/skills/ai-design-elements/SKILL.md": "496343938d984bec3a38fdd2009d276d72caf79a80f956bbb287c8687bc9b75b",
+    ".agents/skills/ai-design-elements/SKILL.md": "e90339b86ffb9cae3b98e9a214d41d6ec93367532bff751effa3bab8e5473e51",
     ".agents/skills/ai-design-elements/SOURCE.md": "e81200929d806316149bb3d4b6fdfadb67425c60746de8b0a2eb446047ff974a",
     ".agents/skills/ai-design-elements/agents/openai.yaml": "571926c9d9abd64f269c63ac3228e296eb0deb9f864968da388acf083943c943",
     ".agents/skills/ai-design-elements/references/catalog.md": "61d4c7a79e507fb6812df1b552c53ffa3cadfaf3005fdbaf1909d13f8227dcc2",
@@ -19,15 +19,15 @@
     ".agents/skills/ai-design-elements/references/sourcing.md": "4453ef90a54aaa8fff4c22551e13afd9382a34a6175ef63c6d2c151f5b1c66c5",
     ".agents/skills/ai-design-elements/resources/catalog.json": "0690a3f0bed37cfd9f48ca535155c10952317645cdc4d8335afa33c56d307bb0",
     ".agents/skills/ai-design-elements/scripts/elements.py": "e229cc6edc273940b5e620154f4e845250bcfe3771183088cbf74f2d99234dba",
-    ".agents/skills/ai-design-implementation/SKILL.md": "1a4781816d0b13f3b10144f7ddb81cb265f7ba7f40fe9a0b15a6eea30a30527e",
+    ".agents/skills/ai-design-implementation/SKILL.md": "05f2d160642e12143dac9881813da1d5e0f5ed23fba60c55b7603e4c75937abb",
     ".agents/skills/ai-design-implementation/agents/openai.yaml": "b2cf486ad532172aa14043c2581b50f055416a8a81f199b46919564b23227277",
     ".agents/skills/ai-design-implementation/assets/IMPLEMENTATION.template.md": "b3758542cc28187fefffcc05af6a504aca54db4564ee53730a8c55df8324f927",
     ".agents/skills/ai-design-implementation/references/cms-transfer.md": "4f5aa9b2eca0cc12cb0fccbda5c436a21ca6bb301a709bfc7fb2160558b12f58",
-    ".agents/skills/ai-design-implementation/references/verification.md": "a78ef6cd887b8e7c0e22b5a36eebe583fe2bc280d54335415f6430485a42fb47",
-    ".agents/skills/ai-design-review/SKILL.md": "afe775aefb3d8eb55c3e7f3b84c4012b352b186210027eabc351fd6e3e1bce29",
+    ".agents/skills/ai-design-implementation/references/verification.md": "2302a920bb6d6a1c368e3e274c4d7788d0e54df2ecfda84a165725d06d00556c",
+    ".agents/skills/ai-design-review/SKILL.md": "62670fb57348751b4a65de2dd24010bea9cb0da263e8d842e16351b59a3f8b65",
     ".agents/skills/ai-design-review/agents/openai.yaml": "34e219ce58ce9de2e87e9ecacdee84af1c2563272a481eb34635086312b806fd",
     ".agents/skills/ai-design-review/assets/REVIEW.template.md": "c33237696678db3b270204d235baf4e915d5bcafae18a7e4d3143b9474b1706e",
-    ".agents/skills/ai-design-review/references/checks.md": "e938a43c2cc09678bbb2f2a3013db4f0071515f2515cbd229661c16eded6a7aa",
+    ".agents/skills/ai-design-review/references/checks.md": "045c73fae9691c9e98ce738006effc61e1c12a75455a9dd67b88f80da12b8c95",
     ".agents/skills/break-ui/LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
     ".agents/skills/break-ui/SKILL.md": "29a53de040a494c10ebb659c7b4e520b8d169dab51264a073c1c8c3e36000040",
     ".agents/skills/break-ui/SOURCE.md": "a5e6583c3361d68fb42832ce4d0fd61ecc30b9f7d348e89594230008d8ca85e2",
@@ -43,5 +43,15 @@
   "upstream_adaptations": [
     "break-ui",
     "mobile-native"
-  ]
+  ],
+  "research_adaptations": {
+    "source": "https://github.com/pbakaus/impeccable",
+    "commit": "e07dc019a75e973db1c71843143bf6f9fd33d87c",
+    "topics": [
+      "clarify",
+      "typeset",
+      "polish"
+    ],
+    "policy": "Own operational wording inside existing skills; no upstream runtime or code included."
+  }
 }

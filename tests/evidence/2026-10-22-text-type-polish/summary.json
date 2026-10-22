@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-22",
+  "release": "0.5.0",
+  "scope": "Eight independent fresh execution contexts; assessment and browser replay by skill author. Synthetic local projects.",
+  "before": "Local changes over 0.4.1 including numbering; not pristine public 0.4.1.",
+  "executions": [
+    {
+      "id": "CTP-01-baseline",
+      "snapshot": "before-adaptation",
+      "assessment": "PASS"
+    },
+    {
+      "id": "CTP-03-baseline",
+      "snapshot": "before-adaptation",
+      "assessment": "PASS"
+    },
+    {
+      "id": "CTP-01",
+      "snapshot": "candidate-v1",
+      "assessment": "PASS within task scope; interface PARTIAL"
+    },
+    {
+      "id": "CTP-02",
+      "snapshot": "candidate-v1",
+      "assessment": "PASS"
+    },
+    {
+      "id": "CTP-03",
+      "snapshot": "candidate-v1",
+      "assessment": "PASS"
+    },
+    {
+      "id": "CTP-04",
+      "snapshot": "candidate-v1",
+      "assessment": "PASS"
+    },
+    {
+      "id": "CTP-05",
+      "snapshot": "candidate-v1",
+      "assessment": "PASS"
+    },
+    {
+      "id": "CTP-06",
+      "snapshot": "candidate-v1",
+      "assessment": "PASS"
+    }
+  ],
+  "limitations": [
+    "Both baselines pass; no causal reliability improvement demonstrated.",
+    "CTP-01 existing H1 overflow at CSS root text 200% beyond copy.js permission remains open.",
+    "CSS root text 200% is not native browser zoom; viewport is not a physical phone.",
+    "No real delivery, screen reader, complete WCAG or field CWV acceptance."
+  ],
+  "browser": "Playwright-bundled Chromium 155.0.8059.12",
+  "skill_files": {
+    ".agents/skills/ai-design-direction/SKILL.md": "a6d08ff323a95e172e859aa65a22dca5201777a47cb5db205af7abf0db351b9b",
+    ".agents/skills/ai-design-direction/agents/openai.yaml": "91fdbaca5989f931de9026b954be4be381dabb8f0797c0bac7c55ae9c7cf4556",
+    ".agents/skills/ai-design-direction/assets/DESIGN.template.md": "32ac7ab9ab3d246cf2204888f3b7ba45194e6db7af97f0b129c898d45debcf26",
+    ".agents/skills/ai-design-direction/assets/DIRECTIONS.template.md": "c9c154b23adbdfe0cb78593d5f20238139c1094448702c7c30fee02069d54a11",
+    ".agents/skills/ai-design-direction/references/visual-probes.md": "7f3145746d94e068a0742f13d08828e3da14362832e7e02af4db5f9bbf5cd4a8",
+    ".agents/skills/ai-design-discovery/SKILL.md": "50a45d87cb92c915581503da3f27237d186db03cbab37d6a4c2a3de42f0fc19c",
+    ".agents/skills/ai-design-discovery/agents/openai.yaml": "b7c43c56f5b1080072ed9b263dfd6279dc51af2990a5d0796c7fdb18f31bb0bf",
+    ".agents/skills/ai-design-discovery/assets/BRIEF.template.md": "38b21fd4d8e3ba1651cb984414a8db11053928dfdbbee8b3b775d859c374c5c3",
+    ".agents/skills/ai-design-discovery/assets/REFERENCES.template.md": "9787549852d8a0a795f395a454b2ce19ed7dc36428bf492b049ed18e0f2e626a",
+    ".agents/skills/ai-design-elements/SKILL.md": "e90339b86ffb9cae3b98e9a214d41d6ec93367532bff751effa3bab8e5473e51",
+    ".agents/skills/ai-design-elements/SOURCE.md": "e81200929d806316149bb3d4b6fdfadb67425c60746de8b0a2eb446047ff974a",
+    ".agents/skills/ai-design-elements/agents/openai.yaml": "571926c9d9abd64f269c63ac3228e296eb0deb9f864968da388acf083943c943",
+    ".agents/skills/ai-design-elements/references/catalog.md": "61d4c7a79e507fb6812df1b552c53ffa3cadfaf3005fdbaf1909d13f8227dcc2",
+    ".agents/skills/ai-design-elements/references/records.md": "b741931223cac1d35b9729263c89240fc559444a174424792a02710c49f5f40b",
+    ".agents/skills/ai-design-elements/references/sourcing.md": "4453ef90a54aaa8fff4c22551e13afd9382a34a6175ef63c6d2c151f5b1c66c5",
+    ".agents/skills/ai-design-elements/resources/catalog.json": "0690a3f0bed37cfd9f48ca535155c10952317645cdc4d8335afa33c56d307bb0",
+    ".agents/skills/ai-design-elements/scripts/elements.py": "e229cc6edc273940b5e620154f4e845250bcfe3771183088cbf74f2d99234dba",
+    ".agents/skills/ai-design-implementation/SKILL.md": "05f2d160642e12143dac9881813da1d5e0f5ed23fba60c55b7603e4c75937abb",
+    ".agents/skills/ai-design-implementation/agents/openai.yaml": "b2cf486ad532172aa14043c2581b50f055416a8a81f199b46919564b23227277",
+    ".agents/skills/ai-design-implementation/assets/IMPLEMENTATION.template.md": "b3758542cc28187fefffcc05af6a504aca54db4564ee53730a8c55df8324f927",
+    ".agents/skills/ai-design-implementation/references/cms-transfer.md": "4f5aa9b2eca0cc12cb0fccbda5c436a21ca6bb301a709bfc7fb2160558b12f58",
+    ".agents/skills/ai-design-implementation/references/verification.md": "2302a920bb6d6a1c368e3e274c4d7788d0e54df2ecfda84a165725d06d00556c",
+    ".agents/skills/ai-design-review/SKILL.md": "62670fb57348751b4a65de2dd24010bea9cb0da263e8d842e16351b59a3f8b65",
+    ".agents/skills/ai-design-review/agents/openai.yaml": "34e219ce58ce9de2e87e9ecacdee84af1c2563272a481eb34635086312b806fd",
+    ".agents/skills/ai-design-review/assets/REVIEW.template.md": "c33237696678db3b270204d235baf4e915d5bcafae18a7e4d3143b9474b1706e",
+    ".agents/skills/ai-design-review/references/checks.md": "045c73fae9691c9e98ce738006effc61e1c12a75455a9dd67b88f80da12b8c95",
+    ".agents/skills/break-ui/LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+    ".agents/skills/break-ui/SKILL.md": "29a53de040a494c10ebb659c7b4e520b8d169dab51264a073c1c8c3e36000040",
+    ".agents/skills/break-ui/SOURCE.md": "a5e6583c3361d68fb42832ce4d0fd61ecc30b9f7d348e89594230008d8ca85e2",
+    ".agents/skills/break-ui/agents/openai.yaml": "3a03c67771734d1217f3b47d9455fd147cd9e9df24fa5a78d0df1de88c2fb36c",
+    ".agents/skills/break-ui/references/catalog.md": "c629aa30b7c75e9b504c13a4e187ee78992aa0ce753699b2bcb3fc45b58d839b",
+    ".agents/skills/mobile-native/LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+    ".agents/skills/mobile-native/SKILL.md": "4b270c32242b93b022b9c7d1404e4bb11d487da5736daad0fd63dba9e7b13eb6",
+    ".agents/skills/mobile-native/SOURCE.md": "dc555e6974e6e794f9e3d3e1b975d67ba598676f063d6db7b48039e1bfbccf51",
+    ".agents/skills/mobile-native/agents/openai.yaml": "01eba9799879be59e82698b809a08df8e7f35b9c0c9faccdfa4d10198fd40c20",
+    ".agents/skills/mobile-native/references/symptoms.md": "3a2b86b0ab79eb51f330f10ce76ea72685a2ee36334734b821fd7684d48560e1"
+  },
+  "evidence_files": {
+    "article-before-mobile.png": "33a08ad49c4f12175927d507e52825f3459944e6d575779089285ae6c85df716",
+    "probe-precise-mobile.png": "f343055535f6ede8fbde285760db3ed079062168f4edd9c191ac1e3f1d8f3672",
+    "primary-mobile.png": "4c907cb7844c485c6c9ba51f7d57797f03773ee36e57462a45408882f179496b",
+    "probe-open-mobile.png": "7a949a9ea5ad58e5657602d482a86523249a95b9ffcca24f672f0d2996ac8167",
+    "article-after-mobile.png": "314d82c05931fb71baf07d718e600a37599f9004300561fead0877e3f5ca7948",
+    "probes/precise/index.html": "e4b7908cf5b44370c83c08e71a3c5400d62a56daac1c1eee89fb4dd9ea33bb12",
+    "probes/precise/site.css": "87b563ed9bcadfbc4c4eb99d277077c6185baa188733eca54f668582277da985",
+    "probes/open/index.html": "e4b7908cf5b44370c83c08e71a3c5400d62a56daac1c1eee89fb4dd9ea33bb12",
+    "probes/open/site.css": "e311758e69d9b949f954b9d1136f9e1c2f341690b5603996fd624d8ad9b6aef1"
+  }
+}
